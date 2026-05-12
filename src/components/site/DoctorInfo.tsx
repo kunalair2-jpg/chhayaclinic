@@ -18,7 +18,7 @@ export function DoctorInfo() {
             <div className="relative rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-white">
               <img
                 src={doctorAruna}
-                alt="DR. RAKHI SABALE"
+                alt="DR. RAKHI MAHESH SABALE B.D.S (M.U.H.S ) AND DENTAL SURGEON"
                 loading="lazy"
                 className="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -26,8 +26,8 @@ export function DoctorInfo() {
                 Available Today
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-6 pt-20">
-                <p className="text-white font-bold text-2xl tracking-tight">DR. RAKHI SABALE</p>
-                <p className="text-blue-200 text-sm mt-1 font-medium">Lead Dentist</p>
+                <p className="text-white font-bold text-xl tracking-tight">DR. RAKHI MAHESH SABALE</p>
+                <p className="text-blue-200 text-sm mt-1 font-medium">B.D.S (M.U.H.S ) AND DENTAL SURGEON</p>
               </div>
             </div>
             
@@ -75,7 +75,7 @@ export function DoctorInfo() {
                 {
                   icon: Phone,
                   title: "Talk to us",
-                  desc: "Mobile No. 9604658424"
+                  desc: "Mobile No. 9921498104"
                 }
               ].map((info, i) => (
                 <div key={i} className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-200 transition-all group">

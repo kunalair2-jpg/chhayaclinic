@@ -34,8 +34,8 @@ export const Route = createFileRoute("/doctors")({
 
 const DOCTORS = [
   {
-    name: "DR. RAKHI SABALE",
-    role: "Founder & Lead Dentist",
+    name: "DR. RAKHI MAHESH SABALE",
+    role: "Dental Surgeon",
     qual: "B.D.S (M.U.H.S)",
     photo: doctorAruna,
     years: 12,

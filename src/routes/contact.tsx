@@ -19,10 +19,10 @@ import {
 import { SiteShell } from "@/components/site/SiteShell";
 
 const CLINIC = {
-  phoneRaw: "9604658424",
-  phoneDisplay: "+91 96046 58424",
-  whatsappRaw: "919604658424",
-  email: "hello@chhayaclinic.in",
+  phoneRaw: "9921498104",
+  phoneDisplay: "+91 99214 98104",
+  whatsappRaw: "919921498104",
+  email: "chhayaclinic007@gmail.com",
   address:
     "Shop no. 111 Ganesh Park B Wing, Katraj Jakat Naka, Near Bhaji Mandai, Katraj Pune 411046",
   mapsQuery:

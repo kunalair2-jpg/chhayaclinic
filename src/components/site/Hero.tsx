@@ -153,7 +153,7 @@ export function Hero() {
                     <div className="size-11 rounded-full ring-2 ring-sky/50 p-0.5 shrink-0">
                       <img
                         src={doctorAruna}
-                        alt="DR. RAKHI SABALE B. D. S (M.U.H.S )"
+                        alt="DR. RAKHI MAHESH SABALE B.D.S (M.U.H.S ) AND DENTAL SURGEON"
                         width={44}
                         height={44}
                         className="size-full rounded-full object-cover"
@@ -161,10 +161,10 @@ export function Hero() {
                     </div>
                     <div className="min-w-0">
                       <p className="text-[10px] text-sky font-bold tracking-widest uppercase">
-                        Lead Dentist
+                        Dental Surgeon
                       </p>
                       <p className="font-display text-[10px] sm:text-xs text-ice truncate">
-                        DR. RAKHI SABALE B. D. S (M.U.H.S )
+                        DR. RAKHI MAHESH SABALE B.D.S (M.U.H.S ) AND DENTAL SURGEON
                       </p>
                     </div>
                   </div>

@@ -1,10 +1,10 @@
-import { ShieldCheck, BadgeCheck, Award, IndianRupee } from "lucide-react";
+import { ShieldCheck, BadgeCheck, Award, CalendarCheck2 } from "lucide-react";
 
 const items = [
   { icon: ShieldCheck, title: "100% Sterilized", sub: "Hospital-grade hygiene" },
-  { icon: BadgeCheck, title: "MCI Certified", sub: "Qualified specialists" },
+  { icon: BadgeCheck, title: "DCI and MSDC Certified", sub: "Qualified specialists" },
   { icon: Award, title: "Google Verified", sub: "4.8★ on Google" },
-  { icon: IndianRupee, title: "EMI Available", sub: "0% no-cost EMI" },
+  { icon: CalendarCheck2, title: "Same-Day Consultations", sub: "Book urgent appointments" },
 ];
 
 export function TrustStrip() {

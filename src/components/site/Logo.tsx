@@ -28,14 +28,14 @@ export function Logo({ variant = "dark" }: LogoProps) {
             isLight ? "text-ice" : "text-royal"
           }`}
         >
-          Chhaya<span className={isLight ? "text-sky" : "text-bright"}>.</span>
+          Chhaya Clinic
         </span>
         <span
           className={`text-[9px] font-medium tracking-[0.2em] uppercase mt-0.5 ${
             isLight ? "text-ice/60" : "text-royal/55"
           }`}
         >
-          Dental Care
+          &amp; Dental Care
         </span>
       </div>
     </Link>

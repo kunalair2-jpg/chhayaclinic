@@ -79,11 +79,11 @@ export function Navbar() {
 
             <div className="flex items-center gap-2">
               <a
-                href="tel:+919604658424"
+                href="tel:+919921498104"
                 className="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-full glass-light text-ink text-xs font-semibold hover:bg-royal/5 transition-colors"
               >
                 <Phone className="size-3.5 text-bright" />
-                <span className="hidden md:inline">+91 96046 58424</span>
+                <span className="hidden md:inline">+91 99214 98104</span>
               </a>
               <Link
                 to="/booking"
@@ -151,7 +151,7 @@ export function Navbar() {
 
           <div className="mt-auto space-y-3 pt-8 border-t border-royal/10">
             <a
-              href="tel:+919604658424"
+              href="tel:+919921498104"
               className="flex items-center gap-3 px-4 py-3 rounded-2xl glass-light text-ink"
             >
               <Phone className="size-4 text-bright" />
@@ -159,7 +159,7 @@ export function Navbar() {
                 <span className="text-[10px] uppercase tracking-widest text-ink/50">
                   Call Now
                 </span>
-                <span className="font-semibold text-sm">+91 96046 58424</span>
+                <span className="font-semibold text-sm">+91 99214 98104</span>
               </div>
             </a>
             <Link

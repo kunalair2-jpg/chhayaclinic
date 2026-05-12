@@ -105,19 +105,19 @@ export function Footer() {
               <li className="flex gap-3">
                 <Phone className="size-4 text-sky shrink-0 mt-0.5" />
                 <a
-                  href="tel:+919604658424"
+                  href="tel:+919921498104"
                   className="text-ice/70 hover:text-sky transition-colors"
                 >
-                  +91 96046 58424
+                  +91 99214 98104
                 </a>
               </li>
               <li className="flex gap-3">
                 <Mail className="size-4 text-sky shrink-0 mt-0.5" />
                 <a
-                  href="mailto:hello@chhayaclinic.in"
+                  href="mailto:chhayaclinic007@gmail.com"
                   className="text-ice/70 hover:text-sky transition-colors"
                 >
-                  hello@chhayaclinic.in
+                  chhayaclinic007@gmail.com
                 </a>
               </li>
             </ul>

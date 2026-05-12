@@ -311,7 +311,7 @@ function AboutPage() {
                   <div>
                     <p className="font-semibold text-ink">Contact</p>
                     <p className="text-sm text-ink/65 leading-relaxed">
-                      Mob. No. 9604658424
+                      Mob. No. 9921498104
                     </p>
                   </div>
                 </div>
