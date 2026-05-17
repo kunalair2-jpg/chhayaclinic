@@ -235,4 +235,137 @@ export const SERVICES: Service[] = [
     popular: true,
     icon: "Siren",
   },
+  {
+    slug: "dentin-sensitivity",
+    name: "Dentin Sensitivity Treatment",
+    category: "general",
+    short: "Rapid relief for sensitive teeth",
+    description:
+      "Targeted desensitising treatments and minimally invasive restorations to reduce sensitivity from exposed dentin or receding gums.",
+    priceFrom: 800,
+    duration: "30 min",
+    icon: "Zap",
+  },
+  {
+    slug: "denture-stomatitis",
+    name: "Denture Stomatitis Care",
+    category: "general",
+    short: "Care & corrective relining",
+    description:
+      "Treatment for inflamed tissue under dentures including relining, antifungal therapy and hygiene counselling to restore comfort.",
+    priceFrom: 1200,
+    duration: "45 min",
+    icon: "Tablet",
+  },
+  {
+    slug: "implant-restoration",
+    name: "Dental Implant Restoration",
+    category: "surgical",
+    short: "Repair & restoration of implant prostheses",
+    description:
+      "Restore broken or worn implant crowns and bridges, including abutment adjustments and new prosthesis fabrication.",
+    priceFrom: 8000,
+    duration: "1–2 visits",
+    icon: "Wrench",
+  },
+  {
+    slug: "dental-bone-graft",
+    name: "Dental Bone Graft",
+    category: "surgical",
+    short: "Ridge preservation and sinus lift grafts",
+    description:
+      "Autograft, allograft and xenograft options to rebuild bone for implant placement or to support failing sockets.",
+    priceFrom: 8000,
+    duration: "Single procedure",
+    icon: "Bone",
+  },
+  {
+    slug: "hybrid-dentures",
+    name: "Hybrid Dentures",
+    category: "general",
+    short: "Fixed-detachable prosthesis on implants",
+    description:
+      "Sturdy, fixed-detachable prostheses for full-arch rehabilitation using implant-supported bars and overdentures.",
+    priceFrom: 45000,
+    duration: "Multi-stage",
+    icon: "AlignJustify",
+  },
+  {
+    slug: "cast-partial-denture",
+    name: "Cast Partial Denture",
+    category: "general",
+    short: "Precision removable partial",
+    description:
+      "Metal-framework partial dentures for durable, accurate fit and improved chewing function for posterior tooth loss.",
+    priceFrom: 7000,
+    duration: "2–3 visits",
+    icon: "Package",
+  },
+  {
+    slug: "laser-root-canal",
+    name: "Laser-assisted Root Canal",
+    category: "general",
+    short: "Laser disinfection for endodontics",
+    description:
+      "Enhanced root canal cleaning and disinfection using laser-assisted protocols for improved outcomes and reduced post-op pain.",
+    priceFrom: 6500,
+    duration: "60–90 min",
+    icon: "Zap",
+  },
+  {
+    slug: "dental-laser-treatments",
+    name: "Dental Laser Treatments",
+    category: "general",
+    short: "Soft-tissue & cosmetic laser care",
+    description:
+      "Laser gum therapy, frenectomies, and soft-tissue contouring for faster healing and minimal bleeding.",
+    priceFrom: 2000,
+    duration: "30–45 min",
+    icon: "Sun",
+  },
+  {
+    slug: "cad-cam-restorations",
+    name: "CAD-CAM Dental Restorations",
+    category: "general",
+    short: "Same-day ceramic crowns & bridges",
+    description:
+      "High-precision, millable ceramics crafted with CAD-CAM for same-day crowns, inlays and onlays with excellent aesthetics.",
+    priceFrom: 9000,
+    duration: "Single visit possible",
+    icon: "Cpu",
+  },
+  {
+    slug: "hybrid-implants",
+    name: "Hybrid Implants",
+    category: "surgical",
+    short: "Implant-supported hybrid prosthesis",
+    description:
+      "Combines the stability of implants with prosthetic flexibility for full-arch restorations and improved function.",
+    priceFrom: 40000,
+    duration: "Multi-stage",
+    icon: "Anchor",
+  },
+];
+
+export const PROCEDURES: string[] = [
+  "Ceramic Bridges",
+  "Hybrid Dentures",
+  "Dental Braces",
+  "Dental Bleaching",
+  "3M Lava Crowns",
+  "Laser RCT (Root Canal)",
+  "Dental Bone Graft",
+  "Cast Partial Denture",
+  "Dental and Surgical Extractions",
+  "Dental Laser",
+  "Dental Ceramic Crown",
+  "Zirconia Bridges",
+  "CAD-CAM Dental Restorations",
+  "Dental Braces Fixing",
+];
+
+export const FACILITIES: string[] = [
+  "Dental OPD",
+  "Corporate Dental Camps",
+  "Online Appointments",
 ];

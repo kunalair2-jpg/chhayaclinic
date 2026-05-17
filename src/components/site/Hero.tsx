@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Play, Star, ShieldCheck, Sparkles, MapPin } from "lucide-react";
 import chayya3 from "@/assets/chayya 3.jpeg";
-import doctorAruna from "@/assets/doctor-aruna.jpg";
+import doctorAruna from "@/assets/Dr. Rakhi Sabale.png";
 import { CLINIC_MAPS_URL } from "@/data/clinic";
 
 export function Hero() {
@@ -63,7 +63,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="text-lg lg:text-xl text-ink/65 leading-relaxed max-w-[55ch] font-light"
             >
-              Trusted by 500+ families in Katraj, Pune. Advanced dental care
+              Trusted by 2600+ families in Katraj, Pune. Advanced dental care
               from gentle hands — at prices that respect your budget.
             </motion.p>
 
@@ -115,7 +115,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-1.5 text-ink/65">
                 <ShieldCheck className="size-3.5 text-success" />
-                500+ patients
+                2600+ patients
               </div>
               <div className="flex items-center gap-1.5 text-ink/65">
                 <Sparkles className="size-3.5 text-bright" />

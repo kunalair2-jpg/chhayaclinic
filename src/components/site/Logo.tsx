@@ -27,8 +27,8 @@ export function Logo({ variant = "dark" }: LogoProps) {
           Chhaya Clinic
         </span>
         <span
-          className={`text-[9px] font-medium tracking-[0.2em] uppercase mt-0.5 ${
-            isLight ? "text-ice/60" : "text-royal/55"
+          className={`text-[11px] font-bold tracking-[0.15em] uppercase mt-0.5 ${
+            isLight ? "text-ice/90" : "text-royal"
           }`}
         >
           &amp; Dental Care

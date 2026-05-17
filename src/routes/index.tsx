@@ -6,8 +6,8 @@ import { ServicesPreview } from "@/components/site/ServicesPreview";
 import { Stats } from "@/components/site/Stats";
 import { DoctorInfo } from "@/components/site/DoctorInfo";
 import { Testimonials } from "@/components/site/Testimonials";
+import { FAQ } from "@/components/site/FAQ";
 import { CTASection } from "@/components/site/CTASection";
-import { Reviews } from "@/components/site/Reviews";
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Trusted by 500+ families. Advanced dental care at fair prices. Book a free consultation.",
+          "Trusted by 2600+ families. Advanced dental care at fair prices. Book a free consultation.",
       },
       { property: "og:type", content: "website" },
     ],
@@ -85,7 +85,7 @@ function HomePage() {
       <Stats />
       <DoctorInfo />
       <Testimonials />
-      <Reviews />
+      <FAQ />
       <CTASection />
     </SiteShell>
   );

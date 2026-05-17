@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site/SiteShell";
 import { ServicesGrid } from "@/components/site/ServicesGrid";
+import { PROCEDURES, FACILITIES } from "@/data/services";
 import {
   ArrowRight,
   BadgeCheck,
@@ -51,6 +52,36 @@ function ServicesPage() {
             >
               View Treatments
             </a>
+          </div>
+        </section>
+
+        {/* PROCEDURES & FACILITIES */}
+        <section className="py-12 bg-white border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Treatments & Procedures</h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {PROCEDURES.map((p) => (
+                    <li key={p} className="flex items-center gap-3 text-slate-700">
+                      <span className="text-green-600">✓</span>
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Facilities</h3>
+                <ul className="space-y-3 text-slate-700">
+                  {FACILITIES.map((f) => (
+                    <li key={f} className="flex items-center gap-3">
+                      <span className="text-green-600">✓</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

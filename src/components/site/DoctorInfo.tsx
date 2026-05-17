@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { BadgeCheck, Clock3, MapPin, Phone, Sparkles, ArrowRight } from "lucide-react";
-import doctorAruna from "@/assets/doctor-aruna.jpg";
+import doctorAruna from "@/assets/Dr. Rakhi Sabale.png";
 import { CLINIC_MAPS_URL } from "@/data/clinic";
 
 const highlights = [
@@ -17,12 +17,14 @@ export function DoctorInfo() {
           {/* LEFT: DOCTOR IMAGE */}
           <div className="lg:col-span-4">
             <div className="relative rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-white">
-              <img
-                src={doctorAruna}
-                alt="DR. RAKHI MAHESH SABALE B.D.S (M.U.H.S ) AND DENTAL SURGEON"
-                loading="lazy"
-                className="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700"
-              />
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img
+                    src={doctorAruna}
+                    alt="DR. RAKHI MAHESH SABALE B.D.S (M.U.H.S ) AND DENTAL SURGEON"
+                    loading="lazy"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
               <div className="absolute top-5 right-5 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-4 py-2 rounded-full shadow-sm">
                 Available Today
               </div>
