@@ -7,10 +7,13 @@ import {
   Stethoscope,
   Bone,
   ShieldPlus,
+  AlignJustify,
+  Baby,
 } from "lucide-react";
 
 import rootCanalImg from "../../assets/images/services/root-canal.jpg";
 import implantImg from "../../assets/images/services/implant.jpg";
+import { SERVICES } from "@/data/services";
 
 const services = [
   {
@@ -65,6 +68,24 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1766338390573-ec092d69cdcb?auto=format&fit=crop&w=1200&q=80",
   },
+  {
+    icon: AlignJustify,
+    name: "Orthodontic Treatment",
+    desc: "Metal braces, ceramic braces and clear aligners to straighten teeth and correct bite.",
+    price: "₹22,000",
+    duration: "12–24 months",
+    image:
+      "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    icon: Baby,
+    name: "Pediadentist (Kids Dentistry)",
+    desc: "Gentle, child-friendly dental care including fluoride treatment, sealants and habit counselling.",
+    price: "₹500",
+    duration: "30 min",
+    image:
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+  },
 ];
 
 export function ServicesPreview() {
@@ -81,7 +102,7 @@ export function ServicesPreview() {
               <span className="italic text-bright">one roof</span>.
             </h2>
             <p className="mt-5 text-ink/60 text-lg leading-relaxed max-w-xl">
-              From a routine cleaning to full-mouth implants — we offer 18
+              From a routine cleaning to full-mouth implants — we offer {SERVICES.length}
               treatments using modern technology, with transparent pricing.
             </p>
           </div>
@@ -89,7 +110,7 @@ export function ServicesPreview() {
             to="/services"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-royal text-ice text-sm font-semibold hover:bg-bright transition-colors shrink-0"
           >
-            All 18 services
+            All {SERVICES.length} services
             <ArrowUpRight className="size-4" />
           </Link>
         </div>

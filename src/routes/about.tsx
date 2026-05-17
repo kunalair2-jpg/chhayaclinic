@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
 import clinicInterior from "@/assets/clinic-interior.jpg";
-import doctorAruna from "@/assets/doctor-aruna.jpg";
+import doctorAruna from "@/assets/Dr. Rakhi Sabale.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
