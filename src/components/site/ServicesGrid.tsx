@@ -19,24 +19,35 @@ const U = (id: string) =>
   `https://images.unsplash.com/${id}?w=1200&h=800&fit=crop&q=85&auto=format`;
 
 const serviceImages: Record<string, string> = {
-  consultation:        consultationImg,
-  "scaling-polishing": scalingPolishingImg,
-  "tooth-filling":     toothFillingImg,
-  "root-canal":        rootCanalImg,
-  "crown-bridge":      crownBridgeImg,
-  "dental-implants":   implantImg,
-  "teeth-whitening":   U("photo-1489278353717-f64c6ee8a4d2"),
-  veneers:             U("photo-1690167687106-180b0ea1d813"),
-  "smile-design":      U("photo-1677026010083-78ec7f1b84ed"),
-  braces:              orthodonticsImg,
-  aligners:            orthodonticsImg,
-  "wisdom-tooth":      wisdomToothImg,
-  "gum-treatment":     U("photo-1606811951341-756fdd437682"),
-  "kids-dentistry":    kidsDentistryImg,
-  "fluoride-sealants": U("photo-1606811841689-23dfddce3e95"),
-  dentures:            U("photo-1620775997990-ee3c25938b4c"),
-  "digital-xray":      U("photo-1522849696084-818b29dfe210"),
-  emergency:           U("photo-1758206524132-72a2aa6639e2"),
+  consultation:              consultationImg,
+  "scaling-polishing":       scalingPolishingImg,
+  "tooth-filling":           toothFillingImg,
+  "root-canal":              rootCanalImg,
+  "crown-bridge":            crownBridgeImg,
+  "dental-implants":         implantImg,
+  "teeth-whitening":         U("photo-1489278353717-f64c6ee8a4d2"),
+  veneers:                   U("photo-1690167687106-180b0ea1d813"),
+  "smile-design":            U("photo-1677026010083-78ec7f1b84ed"),
+  braces:                    orthodonticsImg,
+  aligners:                  orthodonticsImg,
+  "wisdom-tooth":            wisdomToothImg,
+  "gum-treatment":           U("photo-1606811951341-756fdd437682"),
+  "kids-dentistry":          kidsDentistryImg,
+  "fluoride-sealants":       U("photo-1606811841689-23dfddce3e95"),
+  dentures:                  U("photo-1620775997990-ee3c25938b4c"),
+  "digital-xray":            U("photo-1522849696084-818b29dfe210"),
+  emergency:                 U("photo-1758206524132-72a2aa6639e2"),
+  // newly added services
+  "dentin-sensitivity":      scalingPolishingImg,
+  "denture-stomatitis":      crownBridgeImg,
+  "implant-restoration":     implantImg,
+  "dental-bone-graft":       implantImg,
+  "hybrid-dentures":         implantImg,
+  "cast-partial-denture":    crownBridgeImg,
+  "laser-root-canal":        rootCanalImg,
+  "dental-laser-treatments": rootCanalImg,
+  "cad-cam-restorations":    crownBridgeImg,
+  "hybrid-implants":         implantImg,
 };
 
 export function ServicesGrid() {
@@ -100,13 +111,24 @@ export function ServicesGrid() {
               className="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition"
             >
               <div className="relative h-56 overflow-hidden bg-slate-100">
-                <img
-                  src={imageUrl}
-                  alt={s.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                {imageUrl ? (
+                  <img
+                    src={imageUrl}
+                    alt={s.name}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      target.style.display = "none";
+                      target.parentElement?.classList.add("flex", "items-center", "justify-center");
+                    }}
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-blue-50">
+                    <Icon className="w-16 h-16 text-blue-200" />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
                 
                 <div className="absolute top-4 left-4">
